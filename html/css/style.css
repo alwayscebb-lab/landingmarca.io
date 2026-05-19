@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fbfdda;
+  color: #536618;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 55px;
+  border-bottom: 1px solid rgb(83, 102, 24, 0.2);
+}
+
+.logo {
+  width: 175px;
+  height: 62px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.hero-texto {
+  padding: 70px 45px 70px 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitulo {
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+h1,
+h3,
+h4 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+h1 {
+  max-width: 560px;
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1;
+}
+
+.hero p:not(.subtitulo) {
+  max-width: 500px;
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.hero img {
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.beneficios {
+  min-height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  border-top: 1px solid rgba(83, 102, 24, 0.2);
+  border-bottom: 1px solid rgba(83, 102, 24, 0.2);
+  background-color: #f8fad1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.caja {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  min-height: 320px;
+  border-right: 1px solid rgba(83, 102, 24, 0.2);
+  overflow: hidden;
+}
+
+.caja:last-child {
+  border-right: 0;
+}
+
+.tarjetas div {
+  padding: 45px 30px 45px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tarjetas h3 {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+
+.tarjetas p {
+  margin: 0 0 22px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.tarjetas img {
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 32px 60px;
+  background-color: #3f5511;
+  color: #fffbea;
+  text-align: center;
+}
+
+footer div {
+  padding: 15px;
+  border-right: 1px solid rgba(255, 251, 234, 0.35);
+}
+
+footer div:last-of-type {
+  border-right: 0;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer p {
+  max-width: 220px;
+  margin: 8px auto 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer h4 {
+  grid-column: 1 / -1;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 251, 234, 0.35);
+  font-size: clamp(18px, 2vw, 24px);
+}
